@@ -61,6 +61,15 @@
   margin: -105px -2px 0;
   padding: 105px 2px 0;
 }
+.circle {
+        background-color: #fff;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        position: relative;
+        top: 47%;
+        left: 47%;
+}
 
 /* Denna wrapper behöver köra flexbox
 ** Alla Dess barn kommer då påverkas.
