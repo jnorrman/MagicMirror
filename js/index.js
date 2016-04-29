@@ -21,15 +21,14 @@ function updateTXT(hour, min) {
 	else if (hour >= 11 && hour < 15) {
 		document.getElementById('Text').innerHTML = "Hoppas lunchen smakar bra"
 	}
-	else if (hour >= 15 && hour < 19) {
+	else if (hour >= 15 && hour < 20) {
 		document.getElementById('Text').innerHTML = "Välkommen hem Hampus"
 	}
 	else {
 		document.getElementById('Text').innerHTML = "God natt Hampus"
 	}
-	if (min = 22)
+	if (min == 10)
 		updateWeather();
-	}
 }
 
 // Docs at http://simpleweatherjs.com
@@ -50,6 +49,7 @@ function updateWeather() {
 	  });
 	});
 };
+
 
 updateWeather();
 refreshClock();
